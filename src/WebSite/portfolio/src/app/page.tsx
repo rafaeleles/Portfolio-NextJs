@@ -7,23 +7,26 @@ import Navbar from "./components/navbar";
 import { TextHoverEffect } from "./components/ui/text-hover-effect";
 import { TextGenerateEffect } from "./components/ui/text-generate-effect";
 import { TypewriterEffectSmooth } from "./components/ui/typewriter-effect";
+import { style } from "framer-motion/client";
 
 const words = [
   {
-    text: "Build",
-  },
-  {
-    text: "awesome",
-  },
-  {
-    text: "apps",
+    text: "Innovating",
   },
   {
     text: "with",
   },
   {
-    text: "Aceternity.",
-    className: "text-blue-500 dark:text-blue-500",
+    text: "every",
+  },
+  {
+    text: "line.",
+    style: {
+      color: "transparent",
+      backgroundClip: "text",
+      WebkitBackgroundClip: "text", 
+    },
+    className: "bg-gradient-to-b from-neutral-200 to-neutral-600 text-transparent bg-clip-text",
   },
 ];
 
